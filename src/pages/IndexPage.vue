@@ -9,7 +9,7 @@
   <q-page padding class="flex flex-center q-pb-xl">
     <div :class="!Platform.is.mobile ? 'row q-gutter-x-xl items-center' : 'column q-gutter-y-lg items-center justify-center'">
       <div :class="!Platform.is.mobile ? 'col-4 q-mr-xl' : 'col q-pa-md'">
-        <img src="https://picsum.photos/1200/800" class="picture" />
+        <img src="src/assets/picture.jpg" class="picture" />
       </div>
       <div class="col column q-gutter-y-md">
         <div class="column">
