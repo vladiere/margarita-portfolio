@@ -51,14 +51,17 @@
         </div>
       </div>
 
-      <iframe class="shadow-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.9518497973977!2d123.96159127402822!3d10.265463468412683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99a71f8aed98d%3A0xb8a30803d51c63c1!2sAndalucia%20Crest!5e0!3m2!1sen!2sph!4v1701947660072!5m2!1sen!2sph" width="470" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="shadow-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.9518497973977!2d123.96159127402822!3d10.265463468412683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99a71f8aed98d%3A0xb8a30803d51c63c1!2sAndalucia%20Crest!5e0!3m2!1sen!2sph!4v1701947660072!5m2!1sen!2sph" :width="Platform.is.mobile ? '100%' : '485'" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </q-page>
 </template>
 
-<script>
-export default {
-  // name: 'PageName',
-}
+<script setup>
+import { defineComponent } from 'vue';
+import { Platform } from 'quasar';
+
+defineComponent({
+  name: 'AboutPage'
+})
 </script>

@@ -9,7 +9,7 @@
   <q-page padding class="flex flex-center q-pb-xl">
     <div :class="!Platform.is.mobile ? 'row q-gutter-x-xl items-center' : 'column q-gutter-y-lg items-center justify-center'">
       <div :class="!Platform.is.mobile ? 'col-4 q-mr-xl' : 'col q-pa-md'">
-        <img src="src/assets/picture.jpg" class="picture" />
+        <img :src="Picture" class="picture" />
       </div>
       <div class="col column q-gutter-y-md">
         <div class="column">
@@ -25,6 +25,7 @@
 <script setup>
 import { defineComponent } from 'vue';
 import { Platform } from 'quasar';
+import Picture from 'src/assets/picture.jpg';
 
 defineComponent({
   name: 'IndexPage'
